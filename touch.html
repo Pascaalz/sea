@@ -1,0 +1,1785 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	
+<link rel="stylesheet" type="text/css" href="bootstrap336dist/css/bootstrap.min.css">
+
+<link href="https://fonts.googleapis.com/css?family=BenchNine" rel="stylesheet">
+
+<title>LoveAubria</title>
+
+
+<style>
+
+html {
+  position: relative;
+  min-height: 100%;}
+
+body{
+
+  background-color: #ffe6e6;
+  
+}
+ /* This is background without image */
+
+ /*
+.bg-image{
+ background-image: url("Images/.jpg");
+
+  height:400px;
+
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+  } */
+  /* This is background with image */
+
+
+header{
+}
+
+
+ 
+
+h1{
+   display: block;
+    margin: 0px auto;
+     text-align: center;
+  font-family: 'BenchNine', sans-serif;
+  font-size: 60px;
+    color:  #cc0099; 
+margin-top: 0px;
+     
+}
+
+   /* banner web title */
+
+
+h2{
+  color: #ac3973;
+  display: block;
+    margin: 0px auto;
+     text-align: center;
+     
+      font-size: 20px;  
+}  
+
+/* This is the greeting under banner, #2e1513; */
+
+.gallerytitle{
+ font-size: 50px; 
+  color:   #990099;
+}
+
+h3, a{ 
+  color:   #990099;
+font-size: 30px;
+text-align: center;
+  display: block;
+
+
+}
+
+
+/* This is paragraph title*/
+
+
+h4{
+
+  font-family: 'BenchNine', sans-serif;
+  color:  black; /*#6a6868*/
+  font-size: 18px;
+  letter-spacing: 0px;
+   text-align: center;
+
+
+}
+
+
+h5{
+
+  font-family: 'Arial',serif;
+  color: #000000;
+  font-size: 11px;
+  letter-spacing: 1px;
+  padding-left: 3px;}
+
+
+/* This is copyright message */
+
+h6{
+
+  font-family: 'Arial',serif;
+  color:  #6a6868;
+  font-size: 16px;
+  letter-spacing: 1px;
+  padding-left: 3px;}
+
+
+p{
+
+font-family: 'Lucida Bright';
+color:   #343232;
+letter-spacing: .5px;
+font-size: 26px;
+text-align: center;
+}
+
+.steps{
+
+font-family: 'Lucida Bright';
+color: #343232;
+background:  #e59acc;
+letter-spacing: .5px;
+font-size: 29px;
+font-weight: bold;
+text-align: center;
+
+}
+
+
+
+
+ul{
+
+  color: red;
+-webkit-backface-visibility: hidden;
+
+}
+
+li{
+
+  color: #ffffff;
+list-style-type: none;
+text-align: center;
+
+}
+
+
+.blogtitle {
+
+background-image: url("Images/.jpg");
+background-size: 500px;
+  height:100px;
+
+
+ background-position: 350px;
+background-repeat: no-repeat;
+ display: inline-block;
+ width: 100%;
+
+
+  
+
+
+}
+
+
+/* 
+
+.title-image {
+
+background-image: url("images/.jpg");
+background-size: 500px;
+  width:500px;
+  height:400px;
+background-repeat: no-repeat;
+
+background-position: 352px;
+
+ display: inline-block;
+ width: 100%;
+
+
+}
+
+*/
+
+.title-imagewords h2{
+
+  font-size: 17px;
+  padding-left: 0px;
+ padding-right:6px;
+
+
+}
+
+
+
+ @media (max-width: 768px) {
+.blogtitle {
+
+background-image: url("imagesweb/c.jpg");
+background-size: 325px;
+ padding-top: 15px;
+
+
+  height:60px;
+
+  margin-left: 0px;
+ background-position: 15px;
+background-repeat: no-repeat;
+ display: inline-block;
+ width: 100%;
+
+
+  
+
+}
+}
+
+
+/* 
+
+ @media (max-width: 768px) {
+.title-image {
+
+background-image: url("images/.jpg");
+background-size: 373px;
+  width:335px;
+  height:260px;
+background-repeat: no-repeat;
+background-position: 1px;
+ display: inline-block;
+ width: 100%;
+
+}
+}
+
+*/
+
+
+ @media (max-width: 768px) {
+.title-imagewords h2{
+
+  font-size: 17px;
+  padding-left: 0px;
+ padding-right:2px;
+
+}
+}
+
+
+
+
+.banner{
+ 
+    display: block;
+    margin: 0px auto;
+    text-align: center;
+    color: #8B320C;
+    
+  }
+
+  /* banner web title */
+
+
+
+
+
+.btn-danger, .btn-danger:active,.btn-danger:visited { 
+ background-color: #a22a7a; 
+font-size: 30px;
+text-align: center;
+
+
+}
+
+.btn-danger:hover{ 
+ background-color: #8f3d66; 
+font-size: 30px;
+text-align: center;
+
+}
+
+
+
+.navbar-default {
+  background: none;
+  border: none;
+  display: inline-block;
+
+  }
+    /* navigation bar */
+
+  .navbar-default .navbar-nav>li>a {
+color:   #990099;
+
+}
+
+/* navigation bar with menu items */
+
+.navbar-default .navbar-nav>.active>a {
+  color:   #990099  !important;
+  background: white !important;
+}
+
+/* navigation selected active item on menu */
+
+
+
+.dropdown-menu a{
+color: white !important;
+text-align: center !important;
+margin-right: 50px;
+   
+}
+/*Dropdown menu a big screen*/
+
+@media (max-width: 768px) { 
+.dropdown-menu a{
+color: red !important;
+text-align: center !important;
+margin-right: 20px;}
+
+}
+/*Dropdown menu a small screen*/
+
+
+
+.dropdown-menu{
+  font-size: 19px; 
+  background: none;
+
+}
+
+/*Dropdown menu big screen*/
+
+.dropdown a:hover  {
+color:  red !important;
+background: transparent !important;
+
+}
+
+/*Dropdown menu a big screen hover color*/
+
+.navbar a:hover {
+  color: red !important; /* Add a hover color */
+background: transparent !important;
+}
+
+/*navbar menu a big screen hover color*/
+
+
+@media (min-width: 768px) { 
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; }
+
+}
+}
+/*Dropdown menu a small screen hover color*/
+
+
+.col-xs-6 {
+
+  
+  padding-top: 0px ;
+padding-right: 0px; 
+ padding-bottom: 0px ; 
+padding-left: 100px; 
+width: 90%;
+}
+  /*{padding :0 2px;} had this in .col-xs-6*/
+
+
+.paypal {
+
+ width: 55%;
+  padding-left: 300px; 
+
+}
+
+.paypal input[type="image"] {
+  border:0 none !important;
+}
+.paypal input[type="image"]:active {
+  border:0 none !important;
+}
+
+ /* Content in Row full screen sizing */
+
+
+
+.itemdescription {
+  text-align: left;
+ padding-left: 350px;
+
+
+}
+
+.itemdescription h3 {
+  text-align: left;
+color:    #000000;
+font-size: 30px;
+
+}
+
+
+.itemdescription p {
+  font-family: 'arial';
+  text-align: left;
+color:    #343232;
+font-size: 23px;
+font-style: italic;
+
+
+}
+
+
+.displaydescription h3 {
+ 
+color:    #000000;
+font-size: 30px;
+
+}
+
+
+.dispaydescription p {
+ 
+color:    #343232;
+font-size: 23px;
+font-style: italic;
+
+
+}
+
+
+.itemprice h3 {
+ text-align: left;
+color:     #ac3973;
+font-size: 30px;
+
+}
+
+
+
+#con{width: 100%;
+
+}
+
+/* Content in myphoto full screen sizing */
+
+
+ .biocontent{
+
+background-image: url("Images/WEBPAGE/WEB MASSAGE VIEW SITE.jpg");
+
+background-size: 650px;
+  width:500px;
+  height:1900px;
+
+  
+background-position: 240px;
+
+  background-repeat: no-repeat;
+  width: 100%;
+
+}
+
+
+
+.biomobilecontent {
+
+display: none;
+}
+
+
+
+.photo1{
+
+ background-image: url("Images/GALLERY1/DRESS.jpg"); 
+
+background-size: auto 100%;
+
+/* background-size: 300px;*/
+
+  width:300px;
+  height:470px;
+
+  
+background-position: 8px;
+
+  background-repeat: no-repeat;
+
+
+  
+}
+
+
+.photo2{
+
+ background-image: url("Images/GALLERY1/BIKINI.jpg"); 
+
+background-size: auto 100%;
+
+/* background-size: 300px;*/
+
+  width:300px;
+  height:470px;
+
+  
+background-position: 8px;
+
+  background-repeat: no-repeat;
+
+
+  
+}
+
+
+.photo3{
+
+ background-image: url("Images/glamour/green.jpg"); 
+
+background-size: auto 100%;
+
+/* background-size: 300px;*/
+
+  width:300px;
+  height:470px;
+
+  
+background-position: 8px;
+
+  background-repeat: no-repeat;
+
+
+  
+}
+
+
+.photo4{
+
+ background-image: url("Images/glamour/green.jpg"); 
+
+background-size: auto 100%;
+
+/* background-size: 300px;*/
+
+  width:300px;
+  height:470px;
+
+  
+background-position: 8px;
+
+  background-repeat: no-repeat;
+
+
+  
+}
+
+
+.photo5{
+
+ background-image: url("Images/glamour/green.jpg"); 
+
+background-size: auto 100%;
+
+/* background-size: 300px;*/
+
+  width:300px;
+  height:470px;
+
+  
+background-position: 8px;
+
+  background-repeat: no-repeat;
+
+
+  
+}
+
+
+.photo6{
+
+ background-image: url("Images/glamour/green.jpg"); 
+
+background-size: auto 100%;
+
+/* background-size: 300px;*/
+
+  width:300px;
+  height:470px;
+
+  
+background-position: 8px;
+
+  background-repeat: no-repeat;
+
+
+  
+}
+
+
+
+
+
+
+.bakeryitem2 img{
+
+  /* background-image: url("Images/.jpg"); */
+display: inline-block;
+
+  width:670px;
+ padding-left:350px;
+
+ /* background-position: 5px; 
+  margin-left: 0px;
+  margin-right: 0px;
+background-position: 30px; */
+
+  background-repeat: no-repeat;
+ 
+
+  
+}
+
+
+.chipprice{
+background-image: url("images/.jpg");
+
+background-size: 100px;
+  width:200px;
+  height:100px;
+ /* background-position: 5px;*/
+  margin-left: 0px;
+  margin-right: 0px;
+background-position: 30px;
+
+  background-repeat: no-repeat;
+  width: 100%;
+
+  
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+ @media (max-width: 768px) {
+#myphoto{
+padding-left:0px !important;
+}}
+
+ /* Content in myphoto small screen sizing */
+
+ @media (max-width: 768px) {
+.col-xs-6{
+  padding :0 8%;
+ display: inline-block;
+width: 100%;
+
+}
+}
+ /* Content in Row small screen sizing */
+
+
+
+@media (max-width: 768px) {
+.paypal {
+
+  width: 100%;
+  padding-left: 20px; 
+
+}
+}
+
+@media (max-width: 768px) {
+.biomobilecontent {
+display: inline-block;
+  background-image: url("Images/WEBPAGE/MOBILE MASSAGE VIEW SITE.jpg");
+
+background-size: 350px;
+  width:100px;
+  height:2600px;
+
+  
+background-position: 0px;
+
+  background-repeat: no-repeat;
+  width: 100%;
+
+
+}
+}
+
+
+
+@media (max-width: 768px) {
+.biocontent {
+
+display: none;
+
+}
+}  
+
+@media (max-width: 768px) {
+.displayitem img{
+
+display: inline-block;
+ width:200px;
+  
+   margin-left: 0px;
+  margin-right: 0px;
+  padding-left: 0px;
+  padding-right: 10px;
+
+  background-repeat: no-repeat;
+  width: 100%;
+
+}
+}
+
+
+ /*
+@media (max-width: 768px) {
+.chipcookdisplay{
+
+background-image: url("images/.jpg");
+
+ /* background-size: 300px; */
+  /*
+  width:300px;
+  height:500px;
+ /* background-position: 5px; */
+  /* margin-left: 0px;
+  margin-right: 0px;
+  padding-left: 10px;
+
+  background-repeat: no-repeat;
+  width: 100%;
+
+}
+}
+*/
+
+ @media (max-width: 768px) {
+.bakeryitem1 img {
+ /* background-image: url("Images/.jpg"); */
+display: inline-block;
+ /* background-size: 300px; */
+  width:500px;
+  
+ /* background-position: 5px; */
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-left: 10px;
+
+  background-repeat: no-repeat;
+  width: 100%;
+
+  
+}
+}
+
+
+ @media (max-width: 768px) {
+.bakeryitem2 img {
+ /* background-image: url("Images/chip.jpg"); */
+display: inline-block;
+ /* background-size: 300px; */
+  width:500px;
+  
+ /* background-position: 5px; */
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-left: 10px;
+
+  background-repeat: no-repeat;
+  width: 100%;
+
+  
+
+}
+}
+
+
+ @media (max-width: 768px) {
+#filltext{
+width: 100% !important;
+
+
+}
+}
+ /* Content in mytext small screen sizing */
+
+
+
+ @media (max-width: 768px) {
+#measurements{
+width: 100% !important;
+
+}
+}
+ /* Content in measurements in small screen sizing */
+
+
+@media (max-width: 768px) {
+
+.footer{
+
+ padding-left: 0px;
+ padding-right: 0px;
+
+  position: absolute;
+  bottom: 0;
+  width: 100% !important;
+  /* Set the fixed height of the footer here */
+  height: 0px;
+-webkit-backface-visibility: hidden;
+
+/* the footer content*/
+
+
+}
+}
+
+@media (min-width: 360px) 
+and    (max-width: 390px) {
+  body {
+  width: 100% !important; /* Full-width in small devices */
+  /* Dark-grey background */
+  overflow: auto; /* Overflow due to float */
+
+
+/* icon bar at the bottom small screens */
+
+
+
+
+
+
+
+}}
+
+
+
+/*footer*/
+
+.section{
+padding :0px;
+margin-left: 19px;
+color: red;
+font-size: 26px;
+font-family: 'Arial',serif;
+
+
+}
+
+.custom{
+
+   padding-left: 0px;
+    padding-right: 100px;
+
+   background-color: black;   
+    
+
+}
+
+
+.container{
+
+text-align: center;
+ 
+font-family: 'Arial',serif;
+font-size: 25px;
+ margin-bottom: 135px;   /*this is for dropdown bottom space*/
+
+}
+/*this is for dropdown menu*/
+
+
+
+
+.link a{color: white;
+font-family: 'Arial',serif;
+font-size: 25px;
+text-align: center;
+}
+
+/*mytext link color*/
+
+#filltext{
+  width: 100%;
+display: inline;
+  font-family: 'Arial',serif;
+  font-size: 22px;
+  padding-left: O px
+}
+
+
+
+#measure{
+  width:30%;
+ padding-left:
+}
+
+
+#measurements{
+  width:50%;
+ padding-left:
+}
+/* measurement text */
+
+.artist{
+      display:none;
+    }
+/* Field must be filled */
+
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+}
+
+
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+
+}
+/*form settings start here*/
+input,
+textarea,
+label {
+    font-family: 'Poppins',
+        sans-serif;
+ font-size: 18px;
+
+        
+}
+/*
+.container {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 5%;*/
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+    padding: 20px 0;
+}
+
+input,
+textarea,
+label {
+    display: block;
+    margin: 0 auto;
+    width: 70%;
+    color: #7a1f5c;
+}
+
+input,
+textarea {
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px solid #828282;
+}
+
+input[type=submit] {
+    background-color: #545557;
+    padding: 15px 0;
+    color: white;
+    font-size: 18px;
+    border-bottom: none;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+
+input[type=submit]:hover {
+    background: #FFF;
+    color: #1b1c1e;
+}
+
+
+input,
+textarea {
+    color:black ;
+    font-size: 18px;
+    padding: 10px;
+}
+
+input:focus,
+textarea:focus {
+    outline: 1px solid #828282;
+}
+/*form settings ends here*/
+
+
+
+/*form*/
+
+/*
+.menubottom a{
+
+color:#6b6666;
+padding-left: 100px;
+padding-right: 100px;
+
+opacity: 0.9;
+font-family: 'Arial',serif;
+font-size: 18px;
+list-style-type: none;
+-webkit-backface-visibility: hidden;
+
+}*/
+/* the bottom menu links */
+
+.icon-bar {
+  width: 100%; /* Full-width */
+  background-color:    #ffb3b3; /* Dark-grey background */
+  overflow: auto; /* Overflow due to float */
+}
+/* icon bar at the bottom  */
+
+.icon-bar a {
+  float: left; /* Float links side by side */
+  text-align: center; /* Center-align text */
+  width: 8%; /* Equal width (5 icons with 20% width each = 100%) */
+  padding: 8px 0; /* Some top and bottom padding */
+  transition: all 0.3s ease; /* Add transition for hover effects */
+  color: white; /* White text color */
+  font-size: 0px; /* Increased font size */
+}
+
+/* icon bar a link at the bottom  */
+
+.icon-bar a:hover {
+  background-color:  #6a6868; /* Add a hover color */
+
+}
+
+/* hover for icon bar a link at the bottom  */
+
+ /*.active {
+  background-color: white; /* Add an active/current color */
+
+
+
+ @media (max-width: 768px) {
+.icon-bar{
+width: 100%;
+
+}
+}
+
+ @media (max-width: 768px) {
+.icon-bar a{
+margin-left: 15px;
+
+}
+}
+
+
+
+.footer{
+
+ padding-left: 0px;
+ padding-right: 0px;
+
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 0px;
+-webkit-backface-visibility: hidden;
+}
+/* the footer content*/
+
+
+.col-xs-7 {
+  padding :0 2px;
+margin-left: 200px;
+width: 30%;
+  }
+
+
+ @media (max-width: 768px){
+.col-xs-7{
+  padding :0 2px;
+margin-left: 4px;
+width: 40%;
+}
+ }
+
+
+.row{ 
+  width:100%;}
+
+
+.row1{ 
+  width:100%;}
+
+ 
+}
+
+ @media (max-width: 768px) {
+.row{ 
+  width:180%;}
+}
+
+
+ @media (max-width: 768px) {
+.row1{ 
+  width:230%;}
+}
+
+.section{
+padding :0px;
+margin-left: 19px;
+color: red;
+font-size: 26px;
+font-family: 'BenchNine', sans-serif;
+
+
+}
+
+.col-md-6{
+
+margin-left: 0px;
+margin-right: 0px;
+width: 100%;
+
+}
+
+
+ @media (max-width: 768px){
+.col-md-6{
+  margin-left: 0px;
+  width: 100% !important;
+
+}
+ }
+
+
+.custom{
+
+   padding-left: 100px;
+    padding-right: 100px;
+
+   background-color: black;   
+    
+
+}
+
+
+.container{
+
+text-align: center;
+ 
+font-family: 'BenchNine', sans-serif;
+font-size: 25px;
+ margin-bottom: 135px;      /*this is for dropdown bottom space*/
+
+}
+/*this is for dropdown menu*/
+
+.dropdown-menu a{
+color: white !important;
+text-align: center !important;
+margin-right: 50px;
+   
+}
+
+
+@media (max-width: 768px) { 
+.dropdown-menu a{
+color: red !important;
+text-align: center !important;
+margin-right: 20px;}
+
+}
+/*Dropdown menu a small screen*/
+
+.dropdown-menu{
+  font-size: 19px; 
+  background: none;
+
+}
+/*Dropdown menu big screen*/
+
+.dropdown a:hover  {
+color:  white !important;
+background: transparent !important;
+}
+/*Dropdown menu a big screen hover color*/
+
+
+.navbar a:hover {
+  color:  #660066 !important; /* Add a hover color */
+background: transparent !important;
+}
+
+/*navbar menu a big screen hover color*/
+
+@media (min-width: 768px) { 
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; 
+  }
+
+
+
+/*
+@media (max-width: 768px) { 
+.carousel-inner{
+display: none !important;}*/
+
+
+}
+
+td {color:  red !important;
+background: transparent; !important;
+
+}
+/*form*/
+
+.link a{color: white;
+font-family: 'BenchNine', sans-serif;
+font-size: 25px;
+text-align: center;
+}
+
+/*mytext link color*/
+
+.text{
+
+  text-align: center;
+
+  font-family: 'BenchNine', sans-serif;
+  font-size: 22px;
+}
+
+
+#measurements{width:50%;
+ padding-left:
+}
+/* measurement text */
+
+
+.artist{
+      display:none;
+    }
+/* Field must be filled */
+
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+}
+
+
+
+
+
+</style>
+
+
+</head>
+
+
+
+<body>
+
+</br>
+<header>
+
+
+<div class="banner">
+
+<h1>Love Aubria</h1></div>
+
+</header>
+
+
+
+
+
+  <!--<img src="images/Heart.png" width="200" alt="Heart" class="center">-->
+
+
+
+<div class="container">
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+   <!-- Brand and toggle get grouped for better mobile display-->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+
+    </div>
+
+     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="dropdown active">
+          <a href="#main">HOME</a></li>
+        
+<li><a href="#gallery">PORTFOLIO</a>    
+ <li><a href="#rates">RATES</a></li>        
+<li><a href="#faqs">FAQS</a></li>
+<li><a href="#contact">CONTACT</a></li>
+
+
+      </ul>
+    </div><!--/.navbar-collapse -->
+  </div> <!--/.container-fluid-->
+</nav>
+
+</div>
+
+
+
+ 
+<div class="section">
+   <div  class="information" id="rates"> 
+     <div  class="biocontent">
+     </div>
+      <div  class="biomobilecontent">
+     </div>
+
+</div>
+</div>
+</br>
+
+
+
+<div class="section">
+   <div  class="information"> 
+  <h2 class="gallerytitle" id="gallery">Photo + Film Book I</h2>
+
+
+<div class="col-md-6 col-md-offset-6">
+<div class="carousel slide" data-interval="false"
+id="myCarousel">
+  <div class="carousel-inner">
+    
+    <div class="item active">
+      <div class="row1">
+      <div class="col-xs-7">
+       <a href="#"><div class="photo1"></div></a>
+      </div>
+    
+      </div>
+    </div>
+    
+    <div class="item">
+      <div class="row1">
+      <div class="col-xs-7">
+        <a href="#"><div class="photo2"></div></a>
+      </div>
+      
+      </div>
+    </div>
+
+<!--
+    <div class="item">
+      <div class="row1">
+      <div class="col-xs-7">
+        <a href="#"><div class="photo3"></div></a>
+      </div>
+      
+      </div>
+    </div>
+
+
+    <div class="item">
+      <div class="row1">
+      <div class="col-xs-7">
+        <a href="#"><div class="photo4"></div></a>
+      </div>
+      
+      </div>
+    </div>
+
+
+
+
+<div class="item">
+      <div class="row1">
+      <div class="col-xs-7">
+        <a href="#"><div class="photo5"></div></a>
+      </div>
+      
+      </div>
+    </div>
+
+<div class="item">
+      <div class="row1">
+      <div class="col-xs-7">
+        <a href="#"><div class="photo6"></div></a>
+      </div>
+    </div>
+  </div>
+
+
+
+<div class="item">
+      <div class="row1">
+      <div class="col-xs-7"><a href="#"><img src="Images/fashion/fro.jpg" class="img-responsive"></a></div>
+    </div>
+  </div>
+      
+<div class="item">
+      <div class="row1">
+      <div class="col-xs-7"><a href="#"><img src="Images/fashion/NY.jpg" class="img-responsive"></a></div></div></div>
+
+<div class="item">
+      <div class="row1">
+      <div class="col-xs-7"><a href="#"><img src="Images/fashion/color.jpg" class="img-responsive"></a></div>
+      
+</div></div>
+
+
+
+
+    
+
+<div class="item">
+      <div class="row">
+      
+      <div class="col-xs-6"><a href="#"><img src="Images/fashion/NY.jpg" class="img-responsive"></a></div>
+     
+      
+     <div class="col-xs-6"><a href="#"><img src="Images/fashion/NY.jpg" class="img-responsive"></a></div>
+    </div>
+
+</div>
+
+-->
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+
+ <!--
+
+<div class="section">
+   <div  class="information"> 
+  <h2 class="gallerytitle" id="gallery">Photo + Film Book II</h2>
+
+
+<div class="col-md-6 col-md-offset-6">
+<div class="carousel slide" data-interval="false"
+id="myCarousel">
+  <div class="carousel-inner">
+    
+    <div class="item active">
+      <div class="row1">
+      <div class="col-xs-7">
+       <a href="#"><div class="gallery2photo1"></div></a>
+      </div>
+    
+      </div>
+    </div>
+    
+    <div class="item">
+      <div class="row1">
+      <div class="col-xs-7">
+        <a href="#"><div class="gallery2photo2"></div></a>
+      </div>
+      
+      </div>
+    </div>
+
+
+    <div class="item">
+      <div class="row1">
+      <div class="col-xs-7">
+        <a href="#"><div class="gallery2photo3"></div></a>
+      </div>
+      
+      </div>
+    </div>
+
+
+    <div class="item">
+      <div class="row1">
+      <div class="col-xs-7">
+        <a href="#"><div class="gallery2photo4"></div></a>
+      </div>
+      
+      </div>
+    </div>
+
+
+
+
+<div class="item">
+      <div class="row1">
+      <div class="col-xs-7">
+        <a href="#"><div class="gallery2photo5"></div></a>
+      </div>
+      
+      </div>
+    </div>
+
+<div class="item">
+      <div class="row1">
+      <div class="col-xs-7">
+        <a href="#"><div class="gallery2photo6"></div></a>
+      </div>
+    </div>
+  </div>
+
+-->
+
+<!--
+
+<div class="item">
+      <div class="row1">
+      <div class="col-xs-7"><a href="#"><img src="Images/fashion/fro.jpg" class="img-responsive"></a></div>
+    </div>
+  </div>
+      
+<div class="item">
+      <div class="row1">
+      <div class="col-xs-7"><a href="#"><img src="Images/fashion/NY.jpg" class="img-responsive"></a></div></div></div>
+
+<div class="item">
+      <div class="row1">
+      <div class="col-xs-7"><a href="#"><img src="Images/fashion/color.jpg" class="img-responsive"></a></div>
+      
+</div></div>
+
+
+
+
+    
+
+<div class="item">
+      <div class="row">
+      
+      <div class="col-xs-6"><a href="#"><img src="Images/fashion/NY.jpg" class="img-responsive"></a></div>
+     
+      
+     <div class="col-xs-6"><a href="#"><img src="Images/fashion/NY.jpg" class="img-responsive"></a></div>
+    </div>
+
+</div>-->
+ <!--
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+
+-->
+
+
+
+
+
+          <!-- add  more items here -->
+          <!-- Example item start:  -->
+          
+         <!-- </div>
+        <a class="left carousel-control" href="#theCarousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
+        <a class="right carousel-control" href="#theCarousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
+      </div>
+    </div>
+  </div>
+</div>-->
+          <!--  Example item end -->
+
+
+
+
+
+
+
+
+
+<!--
+
+<div class="row">
+<div class="col-md-6">
+    <a href="">
+      <img src="" width="300" height="300" alt="picture of la"></a>
+     
+      <p></p>
+
+      https://s-media-cache-ak0.pinimg.com/736x/be/72/e0/be72e0582181eee5d34efbec215c5a03.jpg
+       
+
+       
+         </div>-->
+
+
+
+<div class="section">
+   <div  class="information" id="faqs"> 
+     
+     <div  class="faqscontent">
+     </div>
+     <div  class="faqsmobilecontent">
+     </div>
+
+</div>
+</div>
+
+
+
+
+
+
+
+</br>
+
+
+ <div id ="filltext" class="col-xs-6">
+    <div  class="information" id="contact"> 
+
+
+
+    <h3>CONTACT</h3>
+<p>Fill out the form below and send a message.</p>
+
+    <form action="https://docs.google.com/forms/d/e/1FAIpQLSemNmqk-cVVm8XzLjSMgN6akCDm10K_WJoWTQY8tVoiaHxr3g/formResponse">
+            <label for="entry.2005620554">Name:</label>
+            <input type="text" name="entry.2005620554" id="name">
+            <label for="entry.1045781291">Email:</label>
+            <input type="text" name="entry.1045781291" id="email">
+            <label for="entry.1166974658">Phone:</label>
+            <input type="text" name="entry.1166974658" id="subject">
+            <label for="entry.839337160">Message</label>
+            <textarea name="entry.839337160" cols="30" rows="10">
+            </textarea>
+
+            <label for="entry.1637499832">Enter the sum of 4 + 2 below.</label>
+            <input type="text" name="entry.1637499832" id="find">
+
+            <input type="submit" value="Send">
+        </form>
+
+</br>
+ <h3>SCREENING FORM</h3>
+<p class='steps'>STEP 1:</p>
+ </br>
+<p>Fill out the screening form below.</p>
+
+
+        
+    <form action="https://docs.google.com/forms/d/e/1FAIpQLScY814hm84DX461w7KqR4jdV2j1AtaGtWEEUMUm3VzRW_cf-A/formResponse">
+            <label for="entry.2005620554">Name:</label>
+            <input type="text" name="entry.2005620554" id="name">
+            <label for="entry.1045781291">Email:</label>
+            <input type="text" name="entry.1045781291" id="email">
+            <label for="entry.1166974658">Phone:</label>
+            <input type="text" name="entry.1166974658" id="subject">
+            <label for="entry.11065046570">Occupation:</label>
+            <input type="text" name="entry.1065046570" id="subject">
+            <label for="entry.54126450">Employer Company Name:</label>
+            <input type="text" name="entry.54126450" id="subject">
+            <label for="entry.371240167">Residential Address:</label>
+            <input type="text" name="entry.371240167" id="subject">
+            <label for="entry.1123986692">Provider # 1 Name:</label>
+            <input type="text" name="entry.1123986692" id="subject">
+            <label for="entry.734962993">Provider # 1 Email:</label>
+            <input type="text" name="entry.734962993" id="subject">
+            <label for="entry.1707983559">Provider # 1 Website:</label>
+            <input type="text" name="entry.1707983559" id="subject">
+            <label for="entry.1802810038">Provider # 1 Phone Number:</label>
+            <input type="text" name="entry.1802810038" id="subject">
+            <label for="entry.1619834240">Provider # 2 Name:</label>
+            <input type="text" name="entry.1619834240" id="subject">
+            <label for="entry.1453758825">Provider # 2 Email:</label>
+            <input type="text" name="entry.1453758825" id="subject">
+            <label for="entry.1386493622">Provider # 2 Website:</label>
+            <input type="text" name="entry.1386493622" id="subject">
+            <label for="entry.2061041204">Provider # 2 Phone Number:</label>
+            <input type="text" name="entry.2061041204" id="subject">
+            <label for="entry.839337160">Message</label>
+            <textarea name="entry.839337160" cols="30" rows="10">
+            </textarea>
+
+        <label for="entry.1637499832">Enter the sum of 4 + 2 below.</label>
+        <input type="text" name="entry.1637499832" id="find">
+
+            <input type="submit" value="Send">
+        </form>
+
+</br>
+
+ <p class="steps">STEP 2:</p>    
+
+<h2>
+<a href="https://forms.gle/SukW7xyovdDUVXUu5" class="btn btn-danger btn-lg" role="button" aria-pressed="true">ID UPLOAD
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-image" viewBox="0 0 16 16">
+  <path d="M6.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"/>
+  <path d="M2.002 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2zm12 1a1 1 0 0 1 1 1v6.5l-3.777-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12V3a1 1 0 0 1 1-1z"/>
+</svg></a>
+
+
+</h2>
+
+
+</div></div>
+
+
+
+
+
+<div class="icon-bar">
+  <a class="active" href="https://www.youtube.com/@Spiciejulie"><img src="Images/ICONS/UTUBE.png" width="40" height="30"></a> 
+
+  <a href="https://www.instagram.com/spiciejuul"><img src="Images/ICONS/IG.png" width="30" height="30"></a> 
+
+   <a href="https://www.facebook.com/profile.php?id=61569468926514"><img src="Images/ICONS/FB.png" width="30" height="30"></a>
+    
+  
+  <a href="https://www.patreon.com/lovejanea"><img src="Images/ICONS/PATREON.png" width="30" height="30"></a>
+</div> 
+ 
+
+
+<div class="footer">
+   <h5>All content on this website are protected by copyright laws. Reproduction and distribution of these images is prohibited. All rights reserved to LoveAubria.</h5>
+
+   </br>
+  <!--<h6>©2025 LoveAubria</h6>-->
+</div>
+
+
+
+
+<script src="Jquery/jquery-3.1.1.min.js"></script>
+    <script src="Jquery/jquery-1.12.4.min.js"></script>
+
+
+    <script src="bootstrap336dist/js/bootstrap.min.js"></script>
+
+    </body>
+
+	
+	</html>
