@@ -74,6 +74,10 @@ font-size: 40px;
   font-size: 25px;
 }
 
+.articledate{
+  font-size: 15px;
+}
+
 .articletext{
   font-size: 30px;
   font-family: 'Times New Roman', Times, serif;
