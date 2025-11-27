@@ -197,12 +197,23 @@ background-repeat: no-repeat;
  display: inline-block;
  width: 100%;
 
+}
+
+.articlephoto{
+
+background-image: url("Images/READ/couplekiss.jpg");
+background-size: 330px;
+  width:300px;
+  height:400px;
 
   
+background-position: 10px;
+
+  background-repeat: no-repeat;
+  width: 100%;
 
 
 }
-
 
 /* 
 
@@ -238,7 +249,7 @@ background-position: 352px;
  @media (max-width: 768px) {
 .blogtitle {
 
-background-image: url("imagesweb/c.jpg");
+background-image: url("imagesweb/.jpg");
 background-size: 325px;
  padding-top: 15px;
 
