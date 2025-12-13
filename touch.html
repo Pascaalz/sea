@@ -74,7 +74,18 @@
 <li><a href="storiesau.html">Short Stories</a></li>
 </ul></li> 
   
- <li><a href="#rates">RATES</a></li>        
+ <li>
+<a href="#rates" onclick="
+  if (window.innerWidth <= 768) {
+    window.scrollTo({top: 5529, behavior: 'smooth'});
+  } else {
+    window.scrollTo({top: 2509, behavior: 'smooth'});
+  }
+  return false;">RATES</a>
+
+</li>
+
+
 <li><a href="faqsau.html">FAQS</a></li>
 <li><a href="#contact">CONTACT</a></li>
 
@@ -90,7 +101,9 @@
 
  
 <div class="section">
-   <div  class="information" id="rates"> 
+   <div  class="information">
+<div id="rates" style="position: absolute; top: 2500px;"></div>
+
      <div  class="biocontent">
      </div>
       <div  class="biomobilecontent">
@@ -419,7 +432,7 @@ id="myCarousel">
 
 </br>
  <h3>SCREENING FORM</h3>
-<p class='steps'>STEP 1:</p>
+<p class="steps">STEP 1:</p>
  </br>
 <p>Fill out the screening form below.</p>
 
@@ -478,9 +491,30 @@ id="myCarousel">
 
 </h2>
 
+</br>
+
+
+<div class="newsletter-container">
+    <h2 class="newsletter-heading">Don't Miss Out</h2>
+    <p class="newsletter-subtext">Get exclusive updates and tasty offers</p>
+    
+    <form class="newsletter-form" action="https://docs.google.com/forms/d/e/1FAIpQLSd9rahCk4nGHF0gcd_4Bkq_c1az3AZ_mx0CJrnsTQRca1g6kw/formResponse"method="POST" target="hidden_iframe" onsubmit="setTimeout(function(){alert('Thank you for subscribing!');}, 500);">
+      <div class="newsletter-input-group">
+        <input 
+          type="email" 
+          name="entry.924271666" 
+          class="newsletter-email-input" 
+          placeholder="Enter your email"
+          required
+        >
+        <button type="submit" class="newsletter-submit-btn">Subscribe</button>
+      </div>
+    </form>
+    
+    <iframe name="hidden_iframe" class="newsletter-hidden-iframe"></iframe>
+  </div>
 
 </div></div>
-
 
 
 
@@ -513,6 +547,23 @@ id="myCarousel">
 
 
     <script src="bootstrap336dist/js/bootstrap.min.js"></script>
+
+  <!--RATES PAGE POSITIONING -->
+
+<script>
+window.addEventListener('load', function() {
+  if (sessionStorage.getItem('scrollToRates')) {
+    sessionStorage.removeItem('scrollToRates');
+    
+    if (window.innerWidth <= 768) {
+      window.scrollTo({top: 5529, behavior: 'smooth'});
+    } else {
+      window.scrollTo({top: 2509, behavior: 'smooth'});
+    }
+  }
+});
+</script>
+
 
     </body>
 
