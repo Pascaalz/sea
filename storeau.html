@@ -17,6 +17,10 @@
         <!-- Main Shop View -->
         <div id="shopView">
             <h1>Spice Up Your Life</h1>
+
+            <!-- SHOP DIRECT LINKS, REPLACE 
+            NUMER WITH PRODUCT NUMBER-->
+      <!--  shop.html?product=3-->
             
             <div class="products-grid">
                 <!-- Product 1 -->
@@ -336,6 +340,19 @@ document.getElementById('detailImage').innerHTML = `<img src="${cardImage}" alt=
 
         
     }
+
+
+
+    window.addEventListener('DOMContentLoaded', () => {
+    const params = new URLSearchParams(window.location.search);
+    const productId = params.get('product');
+
+    if (productId && products[productId]) {
+        showProduct(Number(productId));
+    }
+});
+
+
 </script>
 </body>
 </html>

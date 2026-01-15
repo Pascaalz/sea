@@ -66,7 +66,7 @@ html {
         }
 
         .product-card {
-            background: linear-gradient(#73264d);
+            background: #73264d;
             border-radius: 8px;
             overflow: hidden;
             box-shadow: 0 2px 8px rgba(255, 107, 157, 0.2);
@@ -188,7 +188,7 @@ html {
         }
 
         .detail-container {
-            background: linear-gradient(#73264d);
+            background: #73264d;
             border-radius: 8px;
             padding: 20px;
             border: 1px solid #ff6b9d;
