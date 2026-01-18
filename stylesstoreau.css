@@ -48,6 +48,13 @@ html {
             margin: 0 auto;
         }
 
+        a.back-button {
+    text-decoration: none;
+
+}
+
+
+
         h1 {
             text-align: center;
             margin-bottom: 40px;
@@ -56,6 +63,15 @@ html {
             letter-spacing: 2px;
             text-transform: uppercase;
         }
+
+        .nav-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-bottom: 20px;
+            align-items: flex-start; /* 👈 THIS is for button 
+        not to be stretched */
+}
 
         /* Main Shop Grid */
         .products-grid {
@@ -251,7 +267,7 @@ html {
         }
 
         .related-section h3 {
-            color: #ff6b9d;
+            color: #990033;
             font-size: 28px;
             text-align: center;
             margin-bottom: 30px;
