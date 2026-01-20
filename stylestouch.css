@@ -142,30 +142,29 @@ h6{
   padding-left: 3px;}
 
 
-p{
-
-font-family: 'Lucida Bright';
-color:   #343232;
-letter-spacing: .5px;
-font-size: 26px;
-text-align: center;
+p {
+  font-family: 'Lucida Bright';
+  color: #343232;
+  letter-spacing: .5px;
+  font-size: 26px;
+  text-align: center;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  max-width: 100%;
 }
 
-
-
-
-
-
-.steps{
-
-font-family: 'Lucida Bright';
-color: #343232;
-background:  #e59acc;
-letter-spacing: .5px;
-font-size: 29px;
-font-weight: bold;
-text-align: center;
-
+.steps {
+  font-family: 'Lucida Bright';
+  color: #343232;
+  background: #e59acc;
+  background-size: auto;
+  letter-spacing: .5px;
+  font-size: 29px;
+  font-weight: bold;
+  text-align: center;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
 }
 
 
