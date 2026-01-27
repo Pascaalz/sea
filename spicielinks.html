@@ -30,6 +30,23 @@
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
         }
+
+  /* Scroll Marquee text */
+
+@keyframes scroll {
+    from { transform: translateX(0); }
+    to { transform: translateX(-25%); }
+}
+/* With 4 copies of text, use -25%. With 3 copies, use -33.33%.
+Or just repeat your text within one span to make it longer! That's easier */
+
+.animate-scroll {
+    display: inline-flex;
+    animation: scroll 10s linear infinite;
+    will-change: transform;
+}/* Change the text to whatever message you want! The 20s controls the speed (lower = faster). */
+
+
         .link-button {
             transition: all 0.3s ease;
         }
@@ -51,9 +68,24 @@
             transform: rotate(180deg);
         }
     </style>
+
 </head>
+
 <body class="min-h-screen p-4" style="background: linear-gradient(180deg, color-mix(in srgb, #E09CA2 88%, black 12%) 0%, color-mix(in srgb, #E09CA2 88%, black 12%) 40%, #b593af 100%);">
     <div class="max-w-2xl mx-auto">
+
+
+
+    <div class="bg-pink-500 text-white py-2 overflow-hidden">
+    <div class="animate-scroll whitespace-nowrap">
+        <span class="inline-block"> Miss me? Full videos available now 💦 </span>
+        <span class="inline-block"> Miss me? Full videos available now 💦 </span>
+        <span class="inline-block"> Miss me? Full videos available now 💦 </span>
+        <span class="inline-block"> Miss me? Full videos available now 💦 </span>
+    </div>
+</div>
+    
+    <div class="max-w-4xl mx-auto">
         <!-- Profile Card -->
         <div class="rounded-3xl p-8 shadow-2xl" style="background: linear-gradient(180deg, #e8acbb 0%, #e0adce 100%);">
             <!-- Avatar -->
@@ -71,34 +103,76 @@
 
             <!-- Links -->
             <div class="space-y-3">
-                <!-- ASMR Category -->
+
+
+
+                <!-- LIVE Category -->
                 <div>
-                    <button onclick="toggleCategory('asmr')" class="w-full bg-gradient-to-r from-purple-50 to-pink-50 border-2 border-purple-200 text-gray-800 py-4 px-6 rounded-2xl font-semibold flex items-center justify-between">
+                    <button onclick="toggleCategory('live')" class="w-full bg-gradient-to-r from-purple-50 to-pink-50 border-2 border-purple-200 text-gray-800 py-4 px-6 rounded-2xl font-semibold flex items-center justify-between">
                         <span class="flex items-center gap-3">
                             <svg class="w-5 h-5 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
                             </svg>
-                            ASMR Content
+                            WATCH ME LIVE
                         </span>
-                        <svg id="chevron-asmr" class="chevron w-5 h-5 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <svg id="chevron-live" class="chevron w-5 h-5 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                         </svg>
                     </button>
-                    <div id="category-asmr" class="category-content mt-2 space-y-2">
-                        <button onclick="handleLinkClick('Fashion Try On ASMR', 'https://youtu.be/MJU-yDltHDc?si=Qo8Y6-lD4bUwz4Hz')" class="link-button w-full bg-white text-gray-800 py-3 px-6 rounded-xl font-medium hover:shadow-lg flex items-center justify-between group ml-4">
-                            <span>Fashion Try On ASMR</span>
+                    <div id="category-live" class="category-content mt-2 space-y-2">
+                        <button onclick="handleLinkClick('CAMSODA', 'https://www.camsoda.com/cocobelush')" class="link-button w-full bg-white text-gray-800 py-3 px-6 rounded-xl font-medium hover:shadow-lg flex items-center justify-between group ml-4">
+                            <span>CAMSODA</span>
                             <svg class="w-4 h-4 text-purple-400 group-hover:text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
                             </svg>
                         </button>
-                        <button onclick="handleLinkClick('Kiss Girlfriend ASMR Calls', 'austoredigi.html?product=5')" class="link-button w-full bg-white text-gray-800 py-3 px-6 rounded-xl font-medium hover:shadow-lg flex items-center justify-between group ml-4">
-                            <span>Kiss Girlfriend ASMR Calls</span>
+                        <button onclick="handleLinkClick(' STREAMATE', 'https://www.streamate.com/cam/Cocolalush')" class="link-button w-full bg-white text-gray-800 py-3 px-6 rounded-xl font-medium hover:shadow-lg flex items-center justify-between group ml-4">
+                            <span>STREAMATE</span>
                             <svg class="w-4 h-4 text-purple-400 group-hover:text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
                             </svg>
                         </button>
                     </div>
                 </div>
+
+                <!-- TOY Category -->
+                <div>
+                    <button onclick="toggleCategory('toy')" class="w-full bg-gradient-to-r from-purple-50 to-pink-50 border-2 border-purple-200 text-gray-800 py-4 px-6 rounded-2xl font-semibold flex items-center justify-between">
+                        <span class="flex items-center gap-3">
+                            <svg class="w-5 h-5 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
+                            </svg>
+                           MAKE ME WET CONTROL TOY
+                        </span>
+                        <svg id="chevron-toy" class="chevron w-5 h-5 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div id="category-toy" class="category-content mt-2 space-y-2">
+                        <button onclick="handleLinkClick('Control LIVE On Camsoda', 'https://www.camsoda.com/cocobelush')" class="link-button w-full bg-white text-gray-800 py-3 px-6 rounded-xl font-medium hover:shadow-lg flex items-center justify-between group ml-4">
+                            <span>Control LIVE On Camsoda</span>
+                            <svg class="w-4 h-4 text-purple-400 group-hover:text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                            </svg>
+                        </button>
+                        <button onclick="handleLinkClick(' Control LIVE On Streamate', 'https://www.streamate.com/cam/Cocolalush')" class="link-button w-full bg-white text-gray-800 py-3 px-6 rounded-xl font-medium hover:shadow-lg flex items-center justify-between group ml-4">
+                            <span>Control LIVE On Streamate</span>
+                            <svg class="w-4 h-4 text-purple-400 group-hover:text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                            </svg>
+                        </button>
+
+                        <button onclick="handleLinkClick(' Control LIVE Now', 'https://www.streamate.com/cam/Cocolalush')" class="link-button w-full bg-white text-gray-800 py-3 px-6 rounded-xl font-medium hover:shadow-lg flex items-center justify-between group ml-4">
+                            <span>Control LIVE Now</span>
+                            <svg class="w-4 h-4 text-purple-400 group-hover:text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+
+                
 
                 <!-- Stores Category -->
                 <div>
@@ -174,18 +248,10 @@
                 </div>
 </br>
                 <!-- Other Links -->
-                <button onclick="handleLinkClick('CONTACT | SHORT STORIES', 'https://seasea.info/articleau.html')" class="link-button w-full bg-gradient-to-r from-purple-50 to-pink-50 hover:from-purple-100 hover:to-pink-100 border-2 border-purple-200 text-gray-800 py-4 px-6 rounded-2xl font-semibold hover:shadow-lg flex items-center justify-between group">
-                    <span class="flex items-center gap-3">
-                        <svg class="w-5 h-5 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
-                        </svg>
-                        CONTACT | SHORT STORIES
-                    </span>
-                    <svg class="w-5 h-5 text-purple-400 group-hover:text-purple-600 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
-                    </svg>
-                </button>
-</br>
+  
+                <!-- GIFTS Category -->  
+
+
                 <button onclick="handleLinkClick('GIFTS', 'https://youpay.me/spiciejuul')" class="link-button w-full bg-gradient-to-r from-purple-50 to-pink-50 hover:from-purple-100 hover:to-pink-100 border-2 border-purple-200 text-gray-800 py-4 px-6 rounded-2xl font-semibold hover:shadow-lg flex items-center justify-between group">
                     <span class="flex items-center gap-3">
                         <svg class="w-5 h-5 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -197,7 +263,52 @@
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
                     </svg>
                 </button>
-</br>
+                </br>
+                <!-- CONTACT Category -->
+                <button onclick="handleLinkClick('CONTACT | SHORT STORIES', 'https://seasea.info/articleau.html')" class="link-button w-full bg-gradient-to-r from-purple-50 to-pink-50 hover:from-purple-100 hover:to-pink-100 border-2 border-purple-200 text-gray-800 py-4 px-6 rounded-2xl font-semibold hover:shadow-lg flex items-center justify-between group">
+                    <span class="flex items-center gap-3">
+                        <svg class="w-5 h-5 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                        </svg>
+                        CONTACT | SHORT STORIES
+                    </span>
+                    <svg class="w-5 h-5 text-purple-400 group-hover:text-purple-600 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                    </svg>
+                </button>
+                </br>
+
+
+                <!-- ASMR Category -->
+                <div>
+                    <button onclick="toggleCategory('asmr')" class="w-full bg-gradient-to-r from-purple-50 to-pink-50 border-2 border-purple-200 text-gray-800 py-4 px-6 rounded-2xl font-semibold flex items-center justify-between">
+                        <span class="flex items-center gap-3">
+                            <svg class="w-5 h-5 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
+                            </svg>
+                            ASMR Content
+                        </span>
+                        <svg id="chevron-asmr" class="chevron w-5 h-5 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div id="category-asmr" class="category-content mt-2 space-y-2">
+                        <button onclick="handleLinkClick('Fashion Try On ASMR', 'https://youtu.be/MJU-yDltHDc?si=Qo8Y6-lD4bUwz4Hz')" class="link-button w-full bg-white text-gray-800 py-3 px-6 rounded-xl font-medium hover:shadow-lg flex items-center justify-between group ml-4">
+                            <span>Fashion Try On ASMR</span>
+                            <svg class="w-4 h-4 text-purple-400 group-hover:text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                            </svg>
+                        </button>
+                        <button onclick="handleLinkClick('Kiss Girlfriend ASMR Calls', 'austoredigi.html?product=5')" class="link-button w-full bg-white text-gray-800 py-3 px-6 rounded-xl font-medium hover:shadow-lg flex items-center justify-between group ml-4">
+                            <span>Kiss Girlfriend ASMR Calls</span>
+                            <svg class="w-4 h-4 text-purple-400 group-hover:text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                 </br> 
+
                 <button onclick="handleLinkClick('X Notification', 'https://x.com/cocoluvslu')" class="link-button w-full bg-gradient-to-r from-purple-50 to-pink-50 hover:from-purple-100 hover:to-pink-100 border-2 border-purple-200 text-gray-800 py-4 px-6 rounded-2xl font-semibold hover:shadow-lg flex items-center justify-between group">
                     <span class="flex items-center gap-3">
                         <svg class="w-5 h-5 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
