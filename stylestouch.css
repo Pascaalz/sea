@@ -467,11 +467,11 @@ font-size: 30px;
 
  .biocontent{
 
-background-image: url("Images/WEBPAGE/WEB MASSAGE VIEW SITE.jpg");
+background-image: url("Images/WEBPAGE/WEB VIEW MASSAGE SITE VANILLA.jpg");
 
 background-size: 650px;
   width:500px;
-  height:3480px;
+  height:4580px;
 
 
 background-position: 240px;
@@ -696,11 +696,11 @@ width: 100%;
 @media (max-width: 768px) {
 .biomobilecontent {
 display: inline-block;
-  background-image: url("Images/WEBPAGE/MOBILE MASSAGE VIEW SITE.jpg");
+  background-image: url("Images/WEBPAGE/PHONE VIEW MASSAGE SITE VANILLA.jpg");
 
 background-size: 350px;
   width:100px;
-  height:6600px;
+  height:7750px;
 
   
 background-position: 0px;
